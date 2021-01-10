@@ -35,7 +35,7 @@ $d        = mysqli_fetch_array($query);
                             <p><?= $d["Story1"]; ?></p>
                         </div>
 
-                        <!--<p><a href="download.php?art1=<?= $d['art1'] ?>" class="readmore">Download</a></p>-->
+                        <p><a href="download.php?art1=<?= $d['art1'] ?>" class="readmore">Download</a></p>
                     </div>
                 </div>
             </div>

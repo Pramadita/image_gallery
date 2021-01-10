@@ -47,7 +47,7 @@
                             </div>
                             <div class="col-md-12 form-group">
                                 <label for="Story2">About 2nd Art</label>
-                                <textarea class="form-control" name="Story2" cols="20" rows="5" data-rule="required" placeholder="About the Art" required></textarea>
+                                <textarea class="form-control" name="Story2" cols="20" rows="5" data-rule="required" placeholder="About the Art"></textarea>
                                 <div class="validate"></div>
                             </div>
                             <div class="col-md-6 form-group">
@@ -57,7 +57,7 @@
                             </div>
                             <div class="col-md-12 form-group">
                                 <label for="Story1">About 3rd Art</label>
-                                <textarea class="form-control" name="Story3" cols="20" rows="5" data-rule="required" placeholder="About the Art" required></textarea>
+                                <textarea class="form-control" name="Story3" cols="20" rows="5" data-rule="required" placeholder="About the Art"></textarea>
                                 <div class="validate"></div>
                             </div>
                             <div class="col-md-6 form-group">

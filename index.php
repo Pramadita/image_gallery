@@ -23,7 +23,7 @@
         while ($d = mysqli_fetch_array($data)) {
         ?>
           <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="" class="item-wrap fancybox">
+            <a href="detail.php?id_artist=<?= $d['id_artist'] ?>" class="item-wrap fancybox">
               <div class="work-info">
                 <h3><?php echo $d["art1"]; ?></h3>
                 <span><?php echo $d["art1"]; ?></span>
@@ -33,7 +33,7 @@
           </div>
           <?php if ($d['art2'] != null) : ?>
             <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="" class="item-wrap fancybox">
+              <a href="detail.php?id_artist=<?= $d['id_artist'] ?>" class="item-wrap fancybox">
                 <div class="work-info">
                   <h3><?php echo $d["art2"]; ?></h3>
                   <span><?php echo $d["art2"]; ?></span>
@@ -44,7 +44,7 @@
           <?php endif ?>
           <?php if ($d['art3'] != null) : ?>
             <div class="item col-sm-6 col-md-4 col-lg-4 mb-4">
-              <a href="" class="item-wrap fancybox">
+              <a href="detail.php?id_artist=<?= $d['id_artist'] ?>" class="item-wrap fancybox">
                 <div class="work-info">
                   <h3><?= $d["art3"]; ?></h3>
                   <span><?= $d["art3"]; ?></span>
