@@ -73,7 +73,7 @@ if (isset($_POST["submit"])) {
             $imageTemp = $_FILES["image"]["tmp_name"];
 
             // Kompres dan upload data
-            $compressedImage = compressImage($imageTemp, $imageUploadPath, 10);
+            $compressedImage = compressImage($imageTemp, $imageUploadPath, 75);
 
             if ($compressedImage) {
                 $status = 'success';
@@ -100,7 +100,7 @@ if (isset($_POST["submit"])) {
             $imageTemp = $_FILES["image1"]["tmp_name"];
 
             // Kompres dan upload data
-            $compressedImage = compressImage($imageTemp, $imageUploadPath, 10);
+            $compressedImage = compressImage($imageTemp, $imageUploadPath, 75);
 
             if ($compressedImage) {
                 $status = 'success';
@@ -127,7 +127,7 @@ if (isset($_POST["submit"])) {
             $imageTemp = $_FILES["image2"]["tmp_name"];
 
             // Kompres dan upload data
-            $compressedImage = compressImage($imageTemp, $imageUploadPath, 10);
+            $compressedImage = compressImage($imageTemp, $imageUploadPath, 75);
 
             if ($compressedImage) {
                 $status = 'success';
