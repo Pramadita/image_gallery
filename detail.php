@@ -7,7 +7,7 @@ if (isset($_GET['id_artist'])) {
 include 'connect.php';
 $query    = mysqli_query($koneksi, "SELECT * FROM artist WHERE id_artist='$id_artist'");
 $d        = mysqli_fetch_array($query);
-
+?>
 ?>
 <?php include 'template/header.php'; ?>
 <section class="section">
@@ -35,10 +35,11 @@ $d        = mysqli_fetch_array($query);
                             <div class="mb-5">
                                 <p><?= $d["Story1"]; ?></p>
                                 <p>Size Before : <?= $d["size1"]; ?></p>
-                                <p>Size After :</p>
+                                <p>Size After : <?php echo filesize("Uploads/1/" . $d['art1']) ?></p>
                             </div>
 
                             <p><a href="download.php?art1=<?= $d['art1'] ?>" class="readmore">Download</a></p>
+
                         </div>
                     </div>
                 </div>
@@ -56,7 +57,7 @@ $d        = mysqli_fetch_array($query);
                             <div class="mb-5">
                                 <p><?= $d["Story2"]; ?></p>
                                 <p>Size Before : <?= $d["size2"]; ?></p>
-                                <p>Size After :</p>
+                                <p>Size After : <?php echo filesize("Uploads/2/" . $d['art2']) ?></p>
                             </div>
 
                             <p><a href="download.php?art2=<?= $d['art2'] ?>" class="readmore">Download</a></p>
@@ -77,7 +78,7 @@ $d        = mysqli_fetch_array($query);
                             <div class="mb-5">
                                 <p><?= $d["Story3"]; ?></p>
                                 <p>Size Before : <?= $d["size3"]; ?></p>
-                                <p>Size After :</p>
+                                <p>Size After : <?php echo filesize("Uploads/3/" . $d['art3']) ?> </p>
                             </div>
 
                             <p><a href="download.php?art3=<?= $d['art3'] ?>" class="readmore">Download</a></p>
