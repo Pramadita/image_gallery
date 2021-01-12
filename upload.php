@@ -63,7 +63,7 @@ if (isset($_POST["submit"])) {
     if (!empty($_FILES["image"]["name"])) {
         // File info
 
-        $imageUploadPath = $uploadPath . $fileName1;
+        $imageUploadPath = $uploadPath . $fileName;
         $fileType = pathinfo($imageUploadPath, PATHINFO_EXTENSION);
 
         // Syarat format yang diperbolehkan
@@ -89,8 +89,7 @@ if (isset($_POST["submit"])) {
     }
     if (!empty($_FILES["image1"]["name"])) {
         // File info
-        $fileName = basename($_FILES["image1"]["name"]);
-        $imageUploadPath = $uploadPath1 . $fileName;
+        $imageUploadPath = $uploadPath1 . $fileName1;
         $fileType = pathinfo($imageUploadPath, PATHINFO_EXTENSION);
 
         // Syarat format yang diperbolehkan
@@ -116,8 +115,7 @@ if (isset($_POST["submit"])) {
     }
     if (!empty($_FILES["image2"]["name"])) {
         // File info
-        $fileName = basename($_FILES["image2"]["name"]);
-        $imageUploadPath = $uploadPath2 . $fileName;
+        $imageUploadPath = $uploadPath2 . $fileName2;
         $fileType = pathinfo($imageUploadPath, PATHINFO_EXTENSION);
 
         // Syarat format yang diperbolehkan
