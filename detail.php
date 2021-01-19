@@ -8,7 +8,6 @@ include 'connect.php';
 $query    = mysqli_query($koneksi, "SELECT * FROM artist WHERE id_artist='$id_artist'");
 $d        = mysqli_fetch_array($query);
 ?>
-?>
 <?php include 'template/header.php'; ?>
 <section class="section">
     <div class="container">
